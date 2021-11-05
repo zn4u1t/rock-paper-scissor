@@ -7,17 +7,17 @@
 }
 
 body {
-    background-color: #25212E;  
+    background-color: rgb(7, 169, 233);  
 }
 
 header {
-    background: white;
+    background: rgb(7, 169, 233);
     padding: 20px;
 }
 
 
 header > h1 {
-    color: #25212E;
+    color: white;
     text-align: center;
     font-family: 'Zen Antique', serif;
 }
@@ -90,6 +90,15 @@ img {
 }
 
 #action-message {
+    text-align: center;
+    color: white;
+    font-family: 'Zen Antique', serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#comp-played {
     text-align: center;
     color: white;
     font-family: 'Zen Antique', serif;
