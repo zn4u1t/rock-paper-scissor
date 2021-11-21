@@ -171,3 +171,13 @@ img {
   padding: 2px 10px;
   font-family: "Zen Antique", serif;
 }
+
+.is-dark .green-glow {
+  border: 8px solid #77ce98;
+  box-shadow: 0 0 10px #42ce4b;
+}
+
+.red-glow {
+  border: 8px solid #f15e63;
+  box-shadow: 0 0 10px #e03639;
+}
