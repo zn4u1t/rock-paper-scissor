@@ -1,123 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(7, 169, 233);  
+  background-color: rgb(7, 169, 233);
 }
 
 header {
-    background: rgb(7, 169, 233);
-    padding: 20px;
+  background: rgb(7, 169, 233);
+  padding: 20px;
 }
 
-
 header > h1 {
-    color: white;
-    text-align: center;
-    font-family: 'Zen Antique', serif;
+  color: white;
+  text-align: center;
+  font-family: "Zen Antique", serif;
 }
 
 .score-board {
-    margin: 20px auto;
-    border: 3px solid white;
-    border-radius: 4px;
-    text-align: center;
-    width: 200px;
-    color: white;
-    font-size: 46px;
-    padding: 15px 20px;
-    font-family: 'Zen Antique', serif;
-    position: relative;
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-size: 46px;
+  padding: 15px 20px;
+  font-family: "Zen Antique", serif;
+  position: relative;
 }
 
 .badge {
-    background: #E2584D;
-    color: white;
-    font-size: 14px;
-    padding: 2px 10px;
-    font-family: 'Zen Antique', serif;
+  background: #e2584d;
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+  font-family: "Zen Antique", serif;
 }
 
 #user-label {
-    position: absolute;
-    top: 35px;
-    left: -25px;
+  position: absolute;
+  top: 35px;
+  left: -25px;
 }
 
 #computer-label {
-    position: absolute;
-    top: 35px;
-    right: -35px;
+  position: absolute;
+  top: 35px;
+  right: -35px;
 }
 
 .result {
-    font-size: 40px;
-    color: white;
+  font-size: 40px;
+  color: white;
 }
 
 .result > p {
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Zen Antique', serif;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Zen Antique", serif;
 }
 
 .choices {
-    margin-top: 50px;
-    text-align: center;
+  margin-top: 50px;
+  text-align: center;
 }
 
 img {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .choice {
-    border: 4px solid white;
-    border-radius: 50%;
-    margin: 0 20px;
-    padding: 10px;
-    display: inline-block;
-    transition: all 0.3s ease;
+  border: 4px solid white;
+  border-radius: 50%;
+  margin: 0 20px;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .choice:hover {
-    cursor: pointer;
-    background: white;
+  cursor: pointer;
+  background: white;
 }
 
 #action-message {
-    text-align: center;
-    color: white;
-    font-family: 'Zen Antique', serif;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Zen Antique", serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 #comp-played {
-    text-align: center;
-    color: white;
-    font-family: 'Zen Antique', serif;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Zen Antique", serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .green-glow {
-	border: 8px solid #4dcc7d;
-	box-shadow: 0 0 10px #31b43a;
+  border: 8px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
 }
 
 .red-glow {
-	border: 8px solid #fc121b;
-	box-shadow: 0 0 10px #d01115;
+  border: 8px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
 }
 
 .gray-glow {
-	border: 8px solid #e3e7e8;
-	box-shadow: 0 0 10px #ced3d6;
+  border: 8px solid #e3e7e8;
+  box-shadow: 0 0 10px #ced3d6;
+}
+/* *********************Dark-Light-Toggle****************************** */
+
+.bx {
+  font-size: 36px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.bx-moon {
+  color: #fff;
+}
+
+.bxs-moon {
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card_toggle .bx {
+  position: absolute;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.is-dark .bx-moon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.is-dark .bxs-moon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-dark {
+  background: #242920;
+}
+
+.is-dark header {
+  background: #242920;
+  padding: 20px;
+}
+
+.is-dark .badge {
+  background: #df918c;
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+  font-family: "Zen Antique", serif;
 }

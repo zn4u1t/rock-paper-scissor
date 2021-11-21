@@ -9,6 +9,12 @@ const paper_div = document.getElementById('p');
 const scissors_div = document.getElementById('s');
 const comp_played = document.getElementById('comp-played');
 
+const cardToggle = document.querySelector('.card_toggle'),
+    body = document.querySelector('.page');
+
+cardToggle.onclick = ()=> {
+    body.classList.toggle('is-dark');
+}
 
 function getComputerChoice() {
 	const choices = ['r', 'p', 's'];
@@ -48,7 +54,7 @@ function lose(userChoice, computerChoice) {
 
 function draw(userChoice, computerChoice) {
 	const userChoice_div = document.getElementById(userChoice);
-	result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)}. It's a draw.`;
+	result_p.innerHTML = `You both picked ${convertToWord(userChoice)}. It's a draw.`;
 	comp_played.innerHTML = `Computer Played: ${convertToWord(computerChoice)}`
 	userChoice_div.classList.add('gray-glow');
 	setTimeout(() => userChoice_div.classList.remove('gray-glow'), 750);

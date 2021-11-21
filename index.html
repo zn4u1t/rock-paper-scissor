@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8'>
-        <title>Rock Paper Scissors Game</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Rock Paper Scissors</h1>
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <div class="card_header">
+        <a href="#" class="card_toggle">
+          <i class="bx bx-moon"></i>
+          <i class="bx bxs-moon"></i>
+        </a>
+      </div>
+    </header>
 
-        <div class="score-board">
-            <div id="user-label" class="badge">user</div>
-            <div id="computer-label" class="badge">comp</div>
-            <span id="user-score">0</span>:<span id="computer-score">0</span>
-        </div>
+    <div class="score-board">
+      <div id="user-label" class="badge">user</div>
+      <div id="computer-label" class="badge">comp</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
 
-        <div class="result">
-            <p>Rock...Paper...Scissors...Shoot!!!</p>
-        </div>
+    <div class="result">
+      <p>Rock...Paper...Scissors...Shoot!!!</p>
+    </div>
 
-        <div class="choices">
-            <div class="choice" id="r">
-                <img src="images/rock.png" alt="">
-            </div>
-            <div class="choice" id="p">
-                <img src="images/paper.png" alt="">
-            </div>
-            <div class="choice" id="s">
-                <img src="images/scissors.png" alt="">
-            </div>
-        </div>
-        <p id="action-message">Make your move</p>
-        <p id='comp-played'>Computer Played:</p>
-        <script src="app.js" charset="utf-8"></script>
-    </body>
+    <div class="choices">
+      <div class="choice" id="r">
+        <img src="images/rock.png" alt="" />
+      </div>
+      <div class="choice" id="p">
+        <img src="images/paper.png" alt="" />
+      </div>
+      <div class="choice" id="s">
+        <img src="images/scissors.png" alt="" />
+      </div>
+    </div>
+    <p id="action-message">Make your move</p>
+    <p id="comp-played">Computer Played:</p>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
 </html>
